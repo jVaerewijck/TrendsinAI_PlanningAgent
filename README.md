@@ -18,3 +18,7 @@ ollama serve in terminal, kan zijn dat volgende error verschijnt:
 ollama serve Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
 ```
 dan sluit je de ollama die lokaal runt door rechts te klikken op het ollama icoontje in de taskbalk rechtsonderaan in windows
+
+```
+pip install -r requirements.txt
+```
