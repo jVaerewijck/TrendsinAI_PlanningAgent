@@ -1,0 +1,36 @@
+## Info:
+2 wekelijkse planning in json/csv database ()
+- bestaande opdrachten (klantnaam, geplande uren, tijdsvoorkeuren, frequentie )
+
+RECURRING IS THE DEFAULT
+
+'plan een afspraak 2 wekelijks' 
+
+elke customer is een forever customer
+
+klant maakt afspraak voor in DEZE week eerst en antwoord kan voorstellen in andere week
+
+suggestie wannneer aangegeven blok niet past is belanhrijk maar machine learning patronen iets minder belangrijk
+
+communicatie met console is al goede basis
+1) 'plan een aanpak aan van 3u op dinsdag namiddag'
+2) logica
+3) antwoord
+4) bevestiging
+5) inplannen
+6) doorsturen api
+
+## Aanpak:
+
+zie framework
+
++ documentatie!!!
+
+code gaan 2 dingen doen: 
+- in db extra regel toevoeen
+- die extra regel naar google sturen via API
+
+
+
+uitbreidingen:
+- reistijd afhankelijk van vooraande positie berekenen in google maps
