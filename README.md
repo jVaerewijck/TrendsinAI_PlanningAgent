@@ -19,4 +19,6 @@ ollama serve Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each soc
 ```
 dan sluit je de ollama die lokaal runt door rechts te klikken op het ollama icoontje in de taskbalk rechtsonderaan in windows
 
+```
 pip install -r requirements.txt
+```
