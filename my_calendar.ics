@@ -1,6 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
+CALSCALE:GEORGIAN
 BEGIN:VEVENT
 DESCRIPTION:Scheduled hours: 5.0
 DURATION:PT5H
@@ -40,6 +41,14 @@ LOCATION:Location not specified
 DTSTART:20241121T190000Z
 SUMMARY:Meeting with Sandra
 UID:6811934b-10c0-4609-8cb3-8c61748effe4@6811.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 3.0
+DURATION:PT3H
+LOCATION:Location not specified
+DTSTART:20241128T090000Z
+SUMMARY:Meeting with Jarno
+UID:066f5ceb-cdee-4ec2-99bf-8f5a089ab61f@066f.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Scheduled hours: 2.0

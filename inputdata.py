@@ -5,7 +5,9 @@ import json
 
 FREQUENCY_TO_INDEX = {
     "every week": 1,
-    "every 2 weeks": 2
+    "every 7 days": 1,
+    "every 2 weeks": 2,
+    "every 14 days": 2
     }
 
 

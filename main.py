@@ -4,7 +4,7 @@ import csv
 import os
 
 import callendar
-import input
+import inputdata
 
 if __name__ == "__main__":
     print("Welcome to the AI calendar planner!\nLet me know when you want to schedule an appointment.")
@@ -19,11 +19,11 @@ if __name__ == "__main__":
     response = ollama.generate(model='calender_ollama', prompt=appointment_request)
 
     print(response['response'])
-    appointment_data = input.parse_appointment_request(appointment_request)
+    appointment_data = inputdata.parse_appointment_request(appointment_request)
 
     print(f"Following data will be used for your appointment:\n {appointment_data}")
 
-    input.write_to_database(appointment_data)
+    inputdata.write_to_database(appointment_data)
 
     filename = "my_calendar.ics"
     database = "db.csv"
