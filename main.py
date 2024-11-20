@@ -64,10 +64,10 @@ if __name__ == "__main__":
             klantnaam = row['klantnaam']
             geplande_uren = row['geplande_uren']
             tijdsvoorkeur = row['tijdsvoorkeur']
-            dag = int(row['dag'])
-            frequency = row['frequentie']
+            dag = row['dag']
+            frequentie = row['frequentie']
 
-            add_event_to_calendar(calendar, klantnaam, geplande_uren, tijdsvoorkeur, dag, frequency, start_date)
+            add_event_to_calendar(calendar, klantnaam, geplande_uren, tijdsvoorkeur, dag, frequentie, start_date)
 
     with open(filename, 'w') as file:
         file.writelines(calendar)

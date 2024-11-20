@@ -1,7 +1,7 @@
-klantnaam,geplande_uren,tijdsvoorkeur,dag,frequentie;				
-Jarno, 3, 14:00, donderdag, 2;				
-Jarn, 2, 13:00, vrijdag, 1;	
-John, 4, 11:00, maandag, 1;				
-Dirk, 3, 9:00, woensdag, 2;				
-Sandra, 5, 19:00, donderdag, 1;
-Rob, 1, 9:00, maandag, 2;
+klantnaam,geplande_uren,tijdsvoorkeur,dag,frequentie
+Jarno,3,14:00,donderdag,2
+Jarn,2,13:00,vrijdag,1
+John,4,11:00,maandag,1
+Dirk,3,9:00,woensdag,2
+Sandra,5,19:00,donderdag,1
+Rob,1,9:00,maandag,2

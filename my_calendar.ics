@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+CALSCALE:GEORGIAN
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 4
+DURATION:PT4H
+LOCATION:Location not specified
+DTSTART:20241125T110000Z
+SUMMARY:Meeting with {klantnaam}
+UID:420cacd5-9c9e-413c-bd7a-e21161794a1e@420c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 3
+DURATION:PT3H
+LOCATION:Location not specified
+DTSTART:20241128T140000Z
+SUMMARY:Meeting with {klantnaam}
+UID:a4f35bd8-9316-4470-a03f-feac5e3b14a5@a4f3.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 1
+DURATION:PT1H
+LOCATION:Location not specified
+DTSTART:20241125T090000Z
+SUMMARY:Meeting with {klantnaam}
+UID:caad061d-a868-4ed7-b07d-eeaeadc53308@caad.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 2
+DURATION:PT2H
+LOCATION:Location not specified
+DTSTART:20241122T130000Z
+SUMMARY:Meeting with {klantnaam}
+UID:d9889063-0bee-4328-9c8e-49d2470a4dce@d988.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 4
+DURATION:PT4H
+LOCATION:Location not specified
+DTSTART:20241118T110000Z
+SUMMARY:Meeting with {klantnaam}
+UID:53b43073-ce88-4576-98cd-89f87ede3a29@53b4.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 5
+DURATION:PT5H
+LOCATION:Location not specified
+DTSTART:20241121T190000Z
+SUMMARY:Meeting with {klantnaam}
+UID:7f81f6b6-a5cd-4e9e-b267-cd6bac33fc84@7f81.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 5
+DURATION:PT5H
+LOCATION:Location not specified
+DTSTART:20241128T190000Z
+SUMMARY:Meeting with {klantnaam}
+UID:156d70f8-ba53-4440-9e95-6ca60ddc04a9@156d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 3
+DURATION:PT3H
+LOCATION:Location not specified
+DTSTART:20241127T090000Z
+SUMMARY:Meeting with {klantnaam}
+UID:1c8b972e-e923-49c4-a2ad-fbd2f009fc9f@1c8b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 2
+DURATION:PT2H
+LOCATION:Location not specified
+DTSTART:20241129T130000Z
+SUMMARY:Meeting with {klantnaam}
+UID:b258f6be-6f59-41b4-9ef2-67a636d54b1d@b258.org
+END:VEVENT
+END:VCALENDAR
