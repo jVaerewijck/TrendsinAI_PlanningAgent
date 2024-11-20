@@ -35,9 +35,13 @@ def add_event_to_calendar(calendar, klantnaam, geplande_uren, tijdsvoorkeur, dag
     if dag_index is None:
         print(f"Unknown day: {dag}")
         return
-    
+    duration_hours = 0
     start_time = datetime.strptime(tijdsvoorkeur, "%H:%M").time()
-    duration_hours = float(geplande_uren)
+    if ":" in geplande_uren:  # Format is HH:MM
+        hours, minutes = map(int, geplande_uren.split(":"))
+        duration_hours = hours + minutes / 60
+    else:
+        duration_hours = float(geplande_uren)
 
     event_days = []
     if frequency == '1':
@@ -50,7 +54,7 @@ def add_event_to_calendar(calendar, klantnaam, geplande_uren, tijdsvoorkeur, dag
         event.name = f"Meeting with {klantnaam}"
         event.begin = datetime.combine(event_day, start_time)
         event.duration = timedelta(hours=duration_hours)
-        event.description = f"Scheduled hours: {geplande_uren}"
+        event.description = f"Scheduled hours: {duration_hours}"
         event.location = "Location not specified"
 
         conflict_found = False
@@ -61,7 +65,7 @@ def add_event_to_calendar(calendar, klantnaam, geplande_uren, tijdsvoorkeur, dag
         
         if not conflict_found:
             calendar.events.add(event)
-            print(f"Event added to {filename}")
+            print(f"Event added to calendar")
 
 if __name__ == "__main__":
     filename = "my_calendar.ics"
