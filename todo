@@ -2,9 +2,7 @@
 2 wekelijkse planning in json/csv database ()
 - bestaande opdrachten (klantnaam, geplande uren, tijdsvoorkeuren, frequentie )
 
-RECURRING IS THE DEFAULT
-
-'plan een afspraak 2 wekelijks' 
+RECURRING IS THE DEFAULT 
 
 elke customer is een forever customer
 
@@ -26,11 +24,8 @@ zie framework
 
 + documentatie!!!
 
-code gaan 2 dingen doen: 
-- in db extra regel toevoeen
-- die extra regel naar google sturen via API
-
-
 
 uitbreidingen:
 - reistijd afhankelijk van vooraande positie berekenen in google maps
+
+- ical webserver hosting in de cloud met server.py zodat de ics file automatisch wordt geupdate en de clients zoals outlook hierop kunnen subscriben. momenteel moet je de ics file nog manueel uploaden in outlook. 
