@@ -10,9 +10,15 @@ DAG_TO_INDEX = {
     "donderdag": 3,
     "vrijdag": 4,
     "zaterdag": 5, 
-    "zondag": 6 
+    "zondag": 6,
+    "monday": 0,
+    "tuesday": 1,
+    "wednesday": 2,
+    "thursday": 3,
+    "friday": 4,
+    "saturday": 5,
+    "sunday": 6
 }
-
 
 def create_or_load_calendar(filename='my_calendar.ics'):
     calendar = Calendar()
@@ -22,14 +28,19 @@ def create_or_load_calendar(filename='my_calendar.ics'):
     return calendar
 
 def add_event_to_calendar(calendar, klantnaam, geplande_uren, tijdsvoorkeur, dag, frequency, start_date):
+    dag_index = DAG_TO_INDEX.get(dag.lower())
+    if dag_index is None:
+        print(f"Unknown day: {dag}")
+        return
+    
     start_time = datetime.strptime(tijdsvoorkeur, "%H:%M").time()
     duration_hours = float(geplande_uren)
 
     event_days = []
     if frequency == '1':
-        event_days = [start_date + timedelta(days=dag), start_date + timedelta(days=7 + dag)]
+        event_days = [start_date + timedelta(days=dag_index), start_date + timedelta(days=7 + dag_index)]
     elif frequency == '2':
-        event_days = [start_date + timedelta(days=7 + dag)]
+        event_days = [start_date + timedelta(days=7 + dag_index)]
 
     for event_day in event_days:
         event = Event()
