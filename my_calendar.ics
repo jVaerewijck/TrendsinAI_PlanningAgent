@@ -1,77 +1,76 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
-CALSCALE:GEORGIAN
 BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 4
-DURATION:PT4H
-LOCATION:Location not specified
-DTSTART:20241125T110000Z
-SUMMARY:Meeting with {klantnaam}
-UID:420cacd5-9c9e-413c-bd7a-e21161794a1e@420c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 3
-DURATION:PT3H
-LOCATION:Location not specified
-DTSTART:20241128T140000Z
-SUMMARY:Meeting with {klantnaam}
-UID:a4f35bd8-9316-4470-a03f-feac5e3b14a5@a4f3.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 1
-DURATION:PT1H
-LOCATION:Location not specified
-DTSTART:20241125T090000Z
-SUMMARY:Meeting with {klantnaam}
-UID:caad061d-a868-4ed7-b07d-eeaeadc53308@caad.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 2
-DURATION:PT2H
-LOCATION:Location not specified
-DTSTART:20241122T130000Z
-SUMMARY:Meeting with {klantnaam}
-UID:d9889063-0bee-4328-9c8e-49d2470a4dce@d988.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 4
-DURATION:PT4H
-LOCATION:Location not specified
-DTSTART:20241118T110000Z
-SUMMARY:Meeting with {klantnaam}
-UID:53b43073-ce88-4576-98cd-89f87ede3a29@53b4.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 5
-DURATION:PT5H
-LOCATION:Location not specified
-DTSTART:20241121T190000Z
-SUMMARY:Meeting with {klantnaam}
-UID:7f81f6b6-a5cd-4e9e-b267-cd6bac33fc84@7f81.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 5
+DESCRIPTION:Scheduled hours: 5.0
 DURATION:PT5H
 LOCATION:Location not specified
 DTSTART:20241128T190000Z
-SUMMARY:Meeting with {klantnaam}
-UID:156d70f8-ba53-4440-9e95-6ca60ddc04a9@156d.org
+SUMMARY:Meeting with Sandra
+UID:c75f6f0b-9c5a-4b94-a1a2-e351fedc77cb@c75f.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 3
+DESCRIPTION:Scheduled hours: 2.0
+DURATION:PT2H
+LOCATION:Location not specified
+DTSTART:20241122T130000Z
+SUMMARY:Meeting with Jarn
+UID:f525fc47-7187-4f99-b5b0-80a73936343e@f525.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 4.0
+DURATION:PT4H
+LOCATION:Location not specified
+DTSTART:20241118T110000Z
+SUMMARY:Meeting with John
+UID:3afa83e4-b781-4ea8-8236-0999cc8168d7@3afa.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 3.0
 DURATION:PT3H
 LOCATION:Location not specified
-DTSTART:20241127T090000Z
-SUMMARY:Meeting with {klantnaam}
-UID:1c8b972e-e923-49c4-a2ad-fbd2f009fc9f@1c8b.org
+DTSTART:20241128T140000Z
+SUMMARY:Meeting with Jarno
+UID:841ccfd2-316e-4ee9-95bf-9f843951406b@841c.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Scheduled hours: 2
+DESCRIPTION:Scheduled hours: 5.0
+DURATION:PT5H
+LOCATION:Location not specified
+DTSTART:20241121T190000Z
+SUMMARY:Meeting with Sandra
+UID:6811934b-10c0-4609-8cb3-8c61748effe4@6811.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 2.0
 DURATION:PT2H
 LOCATION:Location not specified
 DTSTART:20241129T130000Z
-SUMMARY:Meeting with {klantnaam}
-UID:b258f6be-6f59-41b4-9ef2-67a636d54b1d@b258.org
+SUMMARY:Meeting with Jarn
+UID:d4bd9c14-785e-42ee-b151-e96329dcfebb@d4bd.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 3.0
+DURATION:PT3H
+LOCATION:Location not specified
+DTSTART:20241127T090000Z
+SUMMARY:Meeting with Dirk
+UID:ce398f81-afc2-48ce-8ee8-1767bdf2b814@ce39.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 1.0
+DURATION:PT1H
+LOCATION:Location not specified
+DTSTART:20241125T090000Z
+SUMMARY:Meeting with Rob
+UID:9f8f99c0-93ea-4e18-820b-f0bf950a2553@9f8f.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 4.0
+DURATION:PT4H
+LOCATION:Location not specified
+DTSTART:20241125T110000Z
+SUMMARY:Meeting with John
+UID:28828992-3f45-40e8-967f-ed4dd5fb2a6f@2882.org
 END:VEVENT
 END:VCALENDAR
