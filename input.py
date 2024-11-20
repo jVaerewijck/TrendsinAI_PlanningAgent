@@ -8,20 +8,7 @@ FREQUENCY_TO_INDEX = {
     "every 2 weeks": 2
     }
 
-print("Welcome to the AI calendar planner!\nLet me know when you want to schedule an appointment.")
-appointment_request = input()
-#appointment_request = "I want to schedule an appointment on thursday 14h every 2 weeks, it will take 4h. My name is Jarno."
 
-modelfile = """
-FROM llama3.2:latest
-PARAMETER temperature 0.5
-"""
-
-ollama.create(model='calender_ollama', modelfile=modelfile)
-
-response = ollama.generate(model='calender_ollama', prompt=appointment_request)
-
-print(response['response'])
 
 def parse_appointment_request(request):
     # Use Ollama to extract appointment details
@@ -32,10 +19,6 @@ def parse_appointment_request(request):
     json_response = json.loads(response['response'])
     return json_response
 
-# Get the structured data
-appointment_data = parse_appointment_request(appointment_request)
-
-print(f"Following data will be used for your appointment:\n {appointment_data}")
 
 def validate_appointment_data(appointment_data):
     required_fields = ['name', 'duration', 'time', 'day', 'frequency']
@@ -91,8 +74,28 @@ def write_to_database(appointment_data):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Call the function with the parsed data
-write_to_database(appointment_data)
+if __name__ == "__main__":
+    print("Welcome to the AI calendar planner!\nLet me know when you want to schedule an appointment.")
+    appointment_request = input()
+    #appointment_request = "I want to schedule an appointment on thursday 14h every 2 weeks, it will take 4h. My name is Jarno."
+
+    modelfile = """
+    FROM llama3.2:latest
+    PARAMETER temperature 0.5
+    """
+
+    ollama.create(model='calender_ollama', modelfile=modelfile)
+
+    response = ollama.generate(model='calender_ollama', prompt=appointment_request)
+
+    print(response['response'])
+    # Get the structured data
+    appointment_data = parse_appointment_request(appointment_request)
+
+    print(f"Following data will be used for your appointment:\n {appointment_data}")
+
+    # Call the function with the parsed data
+    write_to_database(appointment_data)
 
 
 #main.py to check if it overlaps and AI can answer and request the user to make a new appointment
