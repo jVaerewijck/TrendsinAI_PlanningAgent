@@ -61,7 +61,7 @@ def write_to_database(appointment_data):
         return
 
     try:
-        with open('test_db.csv', 'a', newline='') as file:
+        with open('db.csv', 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow([
                 appointment_data['name'],
