@@ -22,3 +22,12 @@ dan sluit je de ollama die lokaal runt door rechts te klikken op het ollama icoo
 ```
 pip install -r requirements.txt
 ```
+## how to run:
+0. db.csv leegmaken(laat cursor in lege lijn)  
+1. main.py runnen(als error met ollama: zie run ollama hierboven)  
+## server
+Nog niet klaar  
+## db.csv
+Wordt nog niet leeggemaakt achter het boeken van eventen  
+
+![alt text](image.png)
