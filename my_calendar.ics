@@ -59,6 +59,14 @@ SUMMARY:Meeting with Jarn
 UID:d4bd9c14-785e-42ee-b151-e96329dcfebb@d4bd.org
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Scheduled hours: 4.0
+DURATION:PT4H
+LOCATION:Location not specified
+DTSTART:20241129T020000Z
+SUMMARY:Meeting with Jarno
+UID:d8e986ed-411f-4927-886e-2fdc8ebe326b@d8e9.org
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Scheduled hours: 3.0
 DURATION:PT3H
 LOCATION:Location not specified
